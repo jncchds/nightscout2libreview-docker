@@ -10,7 +10,7 @@ jobs:
     
     - name: Build the Docker image
       working-directory: .
-      run: docker build -f Dockerfile -t jncchds/nightscout2libreview:latest ../
+      run: docker build -f Dockerfile -t jncchds/nightscout2libreview:latest .
 
     - name: Log into Docker Hub
       uses: docker/login-action@v2
